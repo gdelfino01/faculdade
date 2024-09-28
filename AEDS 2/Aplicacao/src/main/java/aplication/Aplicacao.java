@@ -1,4 +1,4 @@
-package aplication;
+ package aplication;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -132,7 +132,7 @@ public class Aplicacao {
     public static void main(String[] args) {
         HashMap<String, Medalhista> medalhistas = new HashMap<>();
         String arquivo = "C:\\Users\\delfi\\OneDrive\\Documentos\\Faculdade\\Terceiro Periodo\\faculdade\\AEDS 2\\Aplicacao\\src\\main\\java\\aplication\\medallists.csv";
-        String arquivoVerde = "tmp\\medallists.csv";
+        String arquivoVerde = "/tmp/medallists.csv";
         try (Stream<String> linhas = Files.lines(Paths.get(arquivoVerde))) {
             linhas.skip(1).forEach(linha -> {
                 String[] campos = linha.split(",");
@@ -141,8 +141,6 @@ public class Aplicacao {
                 Medalha medalha = new Medalha(tipo, campos[2], campos[6], campos[7]);
 
                 if (medalhistas.containsKey(atleta.getName())) {
-                    // medalhistas.get(atleta);
-                    //Medalhista aux = new Medalhista(atleta.getName(), atleta.getGender(), atleta.getNascimento(), atleta.getCountry(), medalha, atleta.getMedals());
                     medalhistas.get(atleta.getName()).incluirMedalha(medalha);
                 } else {
                     medalhistas.put(atleta.getName(), atleta);
