@@ -110,7 +110,7 @@ public class Pilha<E> {
         Pilha<E> temp = new Pilha<E>();
         
         Celula<E> atual = topo;
-        while(atual != null){
+        while(atual != fundo){
             temp.empilhar(atual.getItem());
             atual = atual.getProximo();
         }

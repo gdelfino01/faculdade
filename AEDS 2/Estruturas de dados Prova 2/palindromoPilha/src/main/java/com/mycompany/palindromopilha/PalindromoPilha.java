@@ -40,7 +40,6 @@ public class PalindromoPilha {
         Pilha<Character> aux = new Pilha<Character>();
         aux = pilha.clone();
         aux.inverter();
-        aux.desempilhar();
         int tamanho =  pilha.getTamanho();
         int cont = 0;
         
