@@ -14,18 +14,23 @@ public class Pilha<E> {
     
     private Celula<E> topo;
     private Celula<E> fundo;
-    private int tamanho;
     
     public Pilha(){
         
         Celula<E> sentinela = new Celula<E>();
         fundo = sentinela;
         topo = sentinela;
-        tamanho = 0;
         
     }
 
     public int getTamanho() {
+        int tamanho =  0;
+        Celula<E> atual = topo;
+        
+        while(atual != fundo){
+            tamanho++;
+            atual = atual.getProximo();
+        }
         return tamanho;
     }
     
@@ -37,7 +42,6 @@ public class Pilha<E> {
     public void empilhar(E item){
         
         topo = new Celula<E>(item, topo);
-        tamanho++;
         
     }
     
@@ -45,7 +49,6 @@ public class Pilha<E> {
         
         E desempilhado = consultarTopo();
         topo = topo.getProximo();
-        tamanho--;
         return desempilhado;
         
         
