@@ -22,7 +22,7 @@ public class Pilha<E> {
         topo = sentinela;
         
     }
-
+    
     public int getTamanho() {
         int tamanho =  0;
         Celula<E> atual = topo;
