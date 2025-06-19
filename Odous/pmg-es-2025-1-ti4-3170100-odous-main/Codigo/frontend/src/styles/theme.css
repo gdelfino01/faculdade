@@ -1,0 +1,91 @@
+/* src/styles/theme.css */
+
+body.light {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --card-background: #ffffff;
+    --card-border: #e0e0e0;
+    --sidebar-background: #f5f5f5;
+    --sidebar-text: #333333;
+    --menu-hover: #f0f2f5;
+    --border-divider: rgba(0, 0, 0, 0.1);
+    --button-bg: #0F62FE;
+    --button-text: #ffffff;
+    --filter-border: #ccc;
+    --filter-text: #666;
+    --filter-selected-text: #001F54;
+    --input-background: #F2F4F8;
+    --input-border: #C1C7CD;
+    --input-focus-border: #000000;
+    --input-label: #000000;
+    --skeleton-light: #f0f0f0;
+    --skeleton-dark: #e0e0e0;
+    --selector-border: #E9ECEF;
+    --selector-text: #0A0D14;
+    --selector-placeholder: #0A0D14;
+    --selector-bg: #ffffff;
+    --tooltip-background: #000000;
+    --tooltip-text: #ffffff;
+    --datagrid-bg: #ffffff;
+    --datagrid-text: #000000;
+    --datagrid-header-bg: #f5f5f5;
+    --datagrid-header-text: #333333;
+    --search-bg: #ffffff;
+    --search-text: #000000;
+    --search-border: #ccc;
+    --search-placeholder: #888888;
+    --tabs-text: #333333;
+    --tabs-selected: #0F62FE;
+    --tabs-indicator: #0F62FE;
+    --modal-bg: #ffffff;
+    --modal-text: #000000;
+    --modal-border: #ccc;
+    --pagina-bg: #f9f9f9;
+}
+
+body.dark {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --card-background: #1e1e1e;
+    --card-border: #333333;
+    --sidebar-background: #1c1c1c;
+    --sidebar-text: #ffffff;
+    --menu-hover: #333333;
+    --border-divider: rgba(255, 255, 255, 0.1);
+    --button-bg: #0F62FE;
+    --button-text: #ffffff;
+    --filter-border: #555;
+    --filter-text: #bbb;
+    --filter-selected-text: #0F62FE;
+    --input-background: #2c2c2c;
+    --input-border: #555555;
+    --input-focus-border: #ffffff;
+    --input-label: #ffffff;
+    --skeleton-light: #2c2c2c;
+    --skeleton-dark: #3a3a3a;
+    --selector-border: #555555;
+    --selector-text: #ffffff;
+    --selector-placeholder: #aaaaaa;
+    --selector-bg: #2c2c2c;
+    --tooltip-background: #ffffff;
+    --tooltip-text: #000000;
+    --datagrid-bg: #1e1e1e;
+    --datagrid-text: #ffffff;
+    --datagrid-header-bg: #2c2c2c;
+    --datagrid-header-text: #333333;
+    --search-bg: #2c2c2c;
+    --search-text: #ffffff;
+    --search-border: #555555;
+    --search-placeholder: #aaaaaa;
+    --tabs-text: #bbbbbb;
+    --tabs-selected: #0F62FE;
+    --tabs-indicator: #0F62FE;
+    --modal-bg: #1e1e1e;
+    --modal-text: #ffffff;
+    --modal-border: #555555;
+    --pagina-bg: #000;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
